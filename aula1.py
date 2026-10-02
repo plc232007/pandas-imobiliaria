@@ -15,3 +15,5 @@ linhas, colunas = entregas.shape
 
 print ("\nDIMENSÕES")
 print (f"{linhas} registros e {colunas} colunas.")
+
+

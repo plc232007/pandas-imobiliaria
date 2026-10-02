@@ -41,3 +41,23 @@ df = entregas[["Entrega_ID", "Distancia_km", "Tempo_h"]]
 
 print ("\nCOLUNAS SELECIONADAS:\n")
 print(df)
+
+se_peso = entregas['Peso_kg']
+print ("Series\n")
+print(f"{se_peso}\n")
+
+df_peso = entregas[['Peso_kg']]
+print ("Data Frame\n")
+print(f"{df_peso} {df_peso.dtypes}\n")
+
+print("\nTIPO DO OBJETO se_peso:")
+print(type(se_peso))
+
+print("\nTIPO DO OBJETO df_peso:")
+print(type(df_peso))
+
+media_tempo = entregas['Tempo_h'].mean()
+
+print (media_tempo)
+
+print (f"Tempo médio das entregas com tempo informado: {media_tempo:.2f} horas.")
